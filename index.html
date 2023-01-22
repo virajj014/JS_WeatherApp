@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <h1>Weather App</h1>
+    <div class="container">
+        <div class="input-btn">
+            <input type="text" id="mycity" placeholder="Enter Place Name" />
+            <button onclick="citysubmit()">+</button>
+        </div>
+        <p id="city-error">Enter a place</p>
+        <div id="weathercard">
+            <img src="./icons/cloudy-day.png"
+                alt="" id="weather-type-img">
+
+
+            <div class="subdiv">
+                <div>
+                    <!-- <h1>Temperature :&nbsp;</h1> -->
+                    <p id="placetemp"></p>
+                </div>
+                <div>
+                    <!-- <h1>Weather Type :&nbsp;</h1> -->
+                    <p id="weathertype"></p>
+                </div>
+                <p id="displaycityname"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
